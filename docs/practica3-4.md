@@ -1,6 +1,6 @@
 Natividad Márquez Baena
 
-# Práctica 3.4: Despliegue de una aplicación una aplicación React en Netlify (PaaS)
+# Práctica 3.4: Despliegue de una aplicación React en Netlify (PaaS)
 
 1.Introducción
 2.Creación de nuestra aplicación
