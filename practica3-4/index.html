@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Practica3 4 - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Practica3 4</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#practica-34-despliegue-de-una-aplicacion-react-en-netlify-paas" class="nav-link">Práctica 3.4: Despliegue de una aplicación React en Netlify (PaaS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#introduccion" class="nav-link">Introducción</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#creacion-de-nuestra-aplicacion" class="nav-link">Creación de nuestra aplicación</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aplicacion-para-netlify" class="nav-link">Aplicación para Netlify</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#proceso-de-despliegue-en-netlify" class="nav-link">Proceso de Despliegue en Netlify</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#despliegue-mediante-conexion-con-github" class="nav-link">Despliegue Mediante Conexión con Github</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Natividad Márquez Baena</p>
+<h1 id="practica-34-despliegue-de-una-aplicacion-react-en-netlify-paas">Práctica 3.4: Despliegue de una aplicación React en Netlify (PaaS)</h1>
+<p>1.Introducción
+2.Creación de nuestra aplicación
+3.Aplicación para Netlify
+4.Proceso de despliegue en Netlify
+5.Despliegue mediante CLI
+6.Despliegue mediante conexión con Github</p>
+<h2 id="introduccion">Introducción</h2>
+<p>En esta práctica se tiene como objetivo desplegar una aplicación React en Netlify, una plataforma Platform as a Service (PaaS), utilizando un repositorio de GitHub como fuente. Esto simula el proceso real de pasar una aplicación del entorno local de desarrollo a producción. El despliegue se realizará de dos formas: mediante el CLI de Netlify y con un repositorio enlazado desde GitHub.</p>
+<h2 id="creacion-de-nuestra-aplicacion">Creación de nuestra aplicación</h2>
+<p>Como primer paso, nos logeamos en la máquina principal emplenado la dirección IP de la virtual, con SSH.</p>
+<p><img alt="alt text" src="../image.png" /></p>
+<p>A continuacion se creará un directorio para albergar la aplicación con el nombre que elijamos. En ese directorio, crearemos los 3 archivos: <code>head.html</code>,<code>tail.html</code>,<code>aplicación.js</code> que conformarán una sencilla aplicación de ejemplo con la que vamos a trabajar. A continuación se presenta su contenido.</p>
+<p><img alt="alt text" src="../image-1.png" />
+<img alt="alt text" src="../image-2.png" />
+<img alt="alt text" src="../image-3.png" /></p>
+<p>A continuación se inicializa un proyecto y se creará el archivo <code>package.json</code>. En el proceso tendremos que aportar ciertos datos:</p>
+<p><img alt="alt text" src="../image-4.png" /></p>
+<p>Para ejecutar la aplicación se usará el comando <code>node aplicacion.js</code>.</p>
+<p>Una vez hecho esto, se comprueba que la aplicación funciona correctamente visitando desde la máquina anfitriona <code>http://IP-maq-virtual:8080</code>. Si funciona debería dar el siguiente resultado:</p>
+<p><img alt="alt text" src="../image-5.png" />
+<img alt="alt text" src="../image-6.png" /></p>
+<h2 id="aplicacion-para-netlify">Aplicación para Netlify</h2>
+<p>Primeramente, pare desplegar la aplicación en Netlify, es necesarios clonar el repositorio que nos han porporcionado para la práctica.</p>
+<p><img alt="alt text" src="../image-7.png" /></p>
+<h2 id="proceso-de-despliegue-en-netlify">Proceso de Despliegue en Netlify</h2>
+<p>El despliegue de la apliación se realizá de dos maneras diferentes. Una es un despliegue manual desde el CLI de Netlify, es decir, desde el terminal, a partir de un directorio local de nuestra máquina Otra es un despliegue desde un código publicado en uno de nuestros repositorios de Github.</p>
+<p>Previamente se ha accedido a la web de Netlify,un proveedor de alojamiento en la nube enfocado en sitios estáticos. Es preciso logearse para crear una cuenta. 
+Para el despliegue en Netlify, primero es necesario acceder a la página y generar un token que usaremos en el despliegue.</p>
+<p><img alt="alt text" src="../image-8.png" /></p>
+<p>Una vez registrados, debemos instalar el CLI de Netlify para ejecutar sus comandos desde el terminal, es decir, con <code>netlify-cli</code> estamos instalando un paquete  CLI oficial de Netlify, una herramienta que permite interactuar con Netlify directamente desde la terminal, ya que carece de entorno gráfico.</p>
+<p><img alt="alt text" src="../image-9.png" /></p>
+<p>Netlify nos solicitará una autenticación, a continuación solicitará el login:</p>
+<p><img alt="alt text" src="../image-10.png" /></p>
+<p>Se muestra una pantalla del navegador para que concedamos la autorización pertinente:</p>
+<p><img alt="alt text" src="../image-11.png" /></p>
+<p><img alt="alt text" src="../image-12.png" /></p>
+<p>Indicamos el token con <code>NETLIFY_AUTH_TOKEN</code>(establecemos como variable de ambiente)</p>
+<p><img alt="alt text" src="../image-13.png" /></p>
+<p>Ahora se instala npm en la aplicación:</p>
+<p><img alt="alt text" src="../image-14.png" /></p>
+<p>Cuando ya las tengamos instaladas podemos proceder a realizar el build:</p>
+<p><img alt="alt text" src="../image-15.png" /></p>
+<p>Se creará una nueva carpeta llamada build que contendrá la aplicación que debemos desplegar. </p>
+<p>Se responderán unas preguntas donde se configurará un nuevo sitio. El Team se dejará por defecto. Además se escoge un nombre para el sitio y el directorio de despliegue será <code>./build</code>.
+<img alt="alt text" src="../image-16.png" /></p>
+<p><img alt="alt text" src="../image-17.png" /></p>
+<p>Visitando el sitio web que nos indica el enlace, comprobamos que la aplicación se ha desplegado correctamente.</p>
+<p><img alt="alt text" src="../image-18.png" /></p>
+<h2 id="despliegue-mediante-conexion-con-github">Despliegue Mediante Conexión con Github</h2>
+<p>Para desplegar la aplicación desde Github, se elimina el site que hemos desplegado antes en Netlif, evitando así posibles conflictos:</p>
+<p><img alt="alt text" src="../image-19.png" /></p>
+<p>Además se deberá borrar el directorio donde se halla el repositorio clonado anteriormente:</p>
+<p><img alt="alt text" src="../image-20.png" /></p>
+<p>Nos descargaremos las fuentes en formato <code>.zip</code></p>
+<p><img alt="alt text" src="../image-21.png" /></p>
+<p>Posteriormente creamos una carpeta nueva y descomprimimos dentro el zip que hemos descargado:</p>
+<p><img alt="alt text" src="../image-22.png" /></p>
+<p>Entraremos en la carpeta creada, inicializaremos un repositorio previamente creado, llamado <code>practicaTresCuatro</code> y subiremos el contenido del zip, es decir, la aplicación a desplegar.</p>
+<p><img alt="alt text" src="../image-23.png" /></p>
+<p>Una vez subido el código a GitHub, se debe enlazar nuestra cuenta de Github con la de Netlify para que éste último pueda tomar el código, hacer el build y desplegarlo. Así pues, entramos en nuestro dashboard de Netlify y le damos a importar proyecto existente de git:</p>
+<p><img alt="alt text" src="../image-24.png" />
+<img alt="alt text" src="../image-25.png" /></p>
+<p>Accedemos al enlace:</p>
+<p><img alt="alt text" src="../image-26.png" /></p>
+<p>Comprobamos que evidentemente, la aplicación se despliega:</p>
+<p><img alt="alt text" src="../image-27.png" /></p>
+<p>Tras esto, se podría suponer que cualquier cambio que hagamos en el proyecto y del que hagamos commit y push en Github, automáticamente genere un nuevo despliegue en Netlify.</p>
+<p>Para comprobar que esto ocurrirá correctamente, se accede a la carpeta public encontramos el archivo <code>robots.txt</code> ( indica a los rastreadores de los buscadores a qué URLs del sitio pueden acceder). 
+Se modificará el archivo para determinar a que URLs de sitios web se puede acceder:</p>
+<p><img alt="alt text" src="../image-28.png" /></p>
+<p>Se debería realizar un commit y un push para comprobar que efecticamente, los cambios se pueden subir.</p>
+<p><img alt="alt text" src="../image-29.png" /></p>
+<p><img alt="alt text" src="../image-30.png" /></p>
+<p>De esta manera, y para finalizar, si se accede a la dirección <code>https://sitio-natividad.netlify.app/robots.txt</code>, se podrá visualizar el archivo modificado.</p>
+<p><img alt="alt text" src="../image-32.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
